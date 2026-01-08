@@ -15,3 +15,5 @@ vless://4d94fa33-9462-48b4-b7de-8a2863560d19@84.201.138.55:4249?encryption=none&
 vless://9f47cbec-f7da-4035-b034-373971d6fe2b@185.155.96.155:443?encryption=none&fp=chrome&mode=auto&path=%2F&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&security=reality&sid=175d&sni=stats.vk-portal.net&type=xhttp#MukhinVPN 🇷🇺 YouTube
 
 vless://star_test1@212.34.138.33:8443?encryption=none&security=reality&sni=vk.com&fp=ios&pbk=veN8fJwX2h34-BCW1cRBVkVyZ1Fw4Kbj91KTwJ3XMQM&sid=af1e&spx=%2F&type=xhttp&path=%2F&mode=auto#MukhinVPN 🇳🇱 Нидерланды
+
+vless://eb162ab1-a006-4931-b1b3-8fc88a22b10e@144.31.178.150:8443?encryption=none&security=reality&sni=01.img.avito.st&pbk=JmO_njtIe9q7HRanm_dx4BtPAGCkycJuDskOISPx_Sg&spx=%2F&type=xhttp&path=%2Fapi%2Fv2%2Fupdates&mode=auto#MukhinVPN 🇪🇪 YouTube Estonia
