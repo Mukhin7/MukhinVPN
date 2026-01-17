@@ -26,6 +26,7 @@ vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?encryption=none&
 
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Америка
 
+vless://f22c9b63-f93b-4650-80d7-937c5422c471@51.250.86.102:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&security=reality&sid=2476f063981ffd92&sni=ads.x5.ru&type=tcp#%F0%9F%87%B7%F0%9F%87%BA Russia [CIDR] YA 31
 
 
 
