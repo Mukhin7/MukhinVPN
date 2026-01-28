@@ -1,5 +1,5 @@
 
-vless://0d6974c7-d686-44ee-931e-a02de6879835@46.243.233.12:443?encryption=none&security=reality&sni=web.max.ru&allowInsecure=true&alpn&fp=chrome&pbk=mLZSvX6YgJbe-DIxWJ_7opUv3IadEXz3Gj-yJQFxd1w&sid=357d2ffdb2&packetEncoding=xudp#VPN 🇷🇺 Мобильный интернет 3
+vless://488fa2ff-440b-46b7-b0e0-211bcf923d5e@51.250.46.90:8090?encryption=none&fp=chrome&mode=auto&path=%2F&pbk=J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs&security=reality&sid=6b2f4e6ac9b1d2f0&sni=web.max.ru&type=xhttp#VPN 🇷🇺 Мобильный интернет 3
 
 vless://488fa2ff-440b-46b7-b0e0-211bcf923d5e@51.250.91.154:8443?encryption=none&fp=chrome&pbk=J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs&security=reality&serviceName=grpc&sid=6b2f4e6ac9b1d2f0&sni=ads.x5.ru&type=grpc#VPN 🇷🇺 Мобильный интернет 4
 
@@ -26,6 +26,7 @@ vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?encryption=none&
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Америка
 
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@89.116.78.207:5818?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Великобритания
+
 
 
 
