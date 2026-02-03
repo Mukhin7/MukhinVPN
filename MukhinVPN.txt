@@ -1,3 +1,10 @@
+port: 7890
+mode: rule
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  nameserver: ['1.1.1.1', '1.0.0.1']
+  fallback: ['8.8.8.8', '9.9.9.9']
 
 {
 "dns": {
@@ -154,6 +161,7 @@ vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?encryption=none&
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Америка
 
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@89.116.78.207:5818?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Великобритания
+
 
 
 
