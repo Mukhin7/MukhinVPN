@@ -3,7 +3,7 @@ vless://f7dddc82-56e5-46ae-af97-8aaa5a12a2c1@yandex-1.ultima.foundation:443?type
 
 vless://eeedbede-b07f-46b7-b842-08db497ba306@178.154.252.255:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=qq&pbk=r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs&sid=a8&sni=eh.vk.com#VPN 🇷🇺 Мобильный интернет 5
 
-vless://14fd1756-3ac5-498b-891d-def680c4cc00@217.16.25.180:8443?type=xhttp&security=reality&fp=qq&pbk=G8er25ve0-VldtX5rzYvjxdduUEOeQKUa3pn6EO01xA&sid=d7934a42d9e2fe68&sni=taxi.yandex.ru&path=&host=&mode=auto#VPN 🇩🇪 Германия
+vless://94dded1d-beca-4e74-95c6-75b7180f7ace@3n1.dreamvpn.pro:8443?encryption=none&security=reality&type=tcp&fp=chrome&pbk=QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0&sni=bunny.net&sid=4326&flow=xtls-rprx-vision&spx=%2F#VPN 🇩🇪 Германия
 
 vless://419ccc44-0a46-4461-a73f-2d6f44fecede@178.250.243.182:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=2Prv1-3tutblsIPl_DhQQp1opFzllqAcSPShoHlmr34&security=reality&sid=da5f84e85736f625&sni=max.ru&type=tcp#VPN 🇫🇮 Финляндия
 
@@ -24,6 +24,7 @@ vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?encryption=none&
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@144.31.111.130:443?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Америка
 
 vless://a384c715-aeb5-45e8-859b-f687ca6c083f@89.116.78.207:5818?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#🇺🇸 VPN Великобритания
+
 
 
 
