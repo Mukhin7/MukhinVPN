@@ -58,7 +58,7 @@
                             {
                                 "encryption": "none",
                                 "flow": "xtls-rprx-vision",
-                                "id": "df80cdbe-bfd3-11f1-bc2d-ae3d11e99cef"
+                                "id": "f269d4d6-bfdb-11f1-bc2d-ae3d11e99cef"
                             }
                         ]
                     }
