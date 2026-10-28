@@ -43,7 +43,7 @@
         "loglevel": "Warning"
     },
     "meta": {
-        "serverDescription": "🇩🇪 Германия 10 Гбит/с 🔥"
+        "serverDescription": "🇲🇨 Монако"
     },
     "outbounds": [
         {
@@ -51,34 +51,31 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "95.182.110.17",
-                        "port": 8443,
+                        "address": "104.194.148.125",
+                        "port": 443,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "33ac88cd-50ec-45bb-aefa-d4bdf7253c7c"
+                                "flow": "xtls-rprx-vision",
+                                "id": "167539f8-88ff-46b3-955c-4c8f7bf0f296"
                             }
                         ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "xhttp",
+                "network": "tcp",
                 "realitySettings": {
-                    "fingerprint": "edge",
-                    "publicKey": "3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc",
-                    "serverName": "promo-digital.wb.ru",
-                    "shortId": "d3f314d0b692f63d",
+                    "fingerprint": "qq",
+                    "publicKey": "5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c",
+                    "serverName": "suffolkprimarycare.uk",
+                    "shortId": "13975a8e0bd50e7c",
                     "show": false,
                     "spiderX": "/"
                 },
-                "security": "reality",
-                "xhttpSettings": {
-                    "mode": "auto",
-                    "path": "/grpc"
-                }
+                "security": "reality"
             },
-            "tag": "proxy-t0-de-124"
+            "tag": "proxy-t0-mc-82"
         },
         {
             "protocol": "freedom",
@@ -89,7 +86,7 @@
             "tag": "block"
         }
     ],
-    "remarks": "🇩🇪 Германия 10 Гбит/с 🔥",
+    "remarks": "🇲🇨 Монако",
     "routing": {
         "balancers": [
         ],
@@ -135,7 +132,7 @@
             },
             {
                 "network": "tcp,udp",
-                "outboundTag": "proxy-t0-de-124",
+                "outboundTag": "proxy-t0-mc-82",
                 "type": "field"
             }
         ]
