@@ -138,3 +138,145 @@
         ]
     }
 }
+
+
+{
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": true
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": true
+            },
+            "tag": "http"
+        }
+    ],
+    "log": {
+        "dnsLog": true,
+        "loglevel": "Warning"
+    },
+    "meta": {
+        "serverDescription": "🇵🇱 Польша 10 Гбит/с 🔥"
+    },
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.130.209.185",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "59c82246-8c6f-4019-98d3-d1c0db6d0d3e"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "realitySettings": {
+                    "fingerprint": "qq",
+                    "publicKey": "kjUd2XnkDKju6yOKi5zDna2_iFt_TzXUlQRsIHp1AEk",
+                    "serverName": "images.mycdn-io.ru",
+                    "shortId": "fbe42a5d4788bacc",
+                    "show": false,
+                    "spiderX": "/"
+                },
+                "security": "reality"
+            },
+            "tag": "proxy-t0-nl-78"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱 Польша 10 Гбит/с 🔥",
+    "routing": {
+        "balancers": [
+        ],
+        "domainMatcher": "hybrid",
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            },
+            {
+                "domain": [
+                    "domain:ru",
+                    "domain:xn--p1ai",
+                    "domain:2gis.com",
+                    "full:go.yandex",
+                    "domain:kaspersky.com",
+                    "domain:kontur.host",
+                    "domain:lenta.com",
+                    "domain:megamarket.tech",
+                    "domain:moex.com",
+                    "domain:mycdn.me",
+                    "domain:qiwi.com",
+                    "domain:reviews.2gis.com",
+                    "domain:sberbank.com",
+                    "domain:tank-online.com",
+                    "domain:tbank-online.com",
+                    "domain:tildaapi.com",
+                    "domain:trvl.yandex.net",
+                    "domain:userapi.com",
+                    "domain:vk.com",
+                    "domain:vk.me",
+                    "domain:yandex.com",
+                    "domain:yandex.net",
+                    "domain:yandexcloud.net",
+                    "domain:yastatic.net"
+                ],
+                "outboundTag": "direct",
+                "type": "field"
+            },
+            {
+                "network": "tcp,udp",
+                "outboundTag": "proxy-t0-nl-78",
+                "type": "field"
+            }
+        ]
+    }
+}
