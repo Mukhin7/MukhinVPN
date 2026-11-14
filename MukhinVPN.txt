@@ -1,7 +1,4 @@
-vless://e2278a4a-c130-40aa-9f30-a44b8ac5a262@178.214.109.2:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=promo-digital.wb.ru&fp=edge&pbk=3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc&sid=1cfa55abe4d2dc7a&spx=/#🇩🇪 Германия 10 Гбит/с 🔥
-
-vless://808b5e36-30f6-4dfb-8180-a359769f77b8@178.214.127.1:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=stream.selectus.ru&fp=edge&pbk=XqDFAqo3BBi_qmTzK2Kb7ZENPHQaC_aRiHRiJ6_YQxM&sid=4b660f507ca8c748&spx=/#🇺🇸 США 10 Гбит/с 🔥
-
-vless://3dcc4621-9df0-4bdf-aec9-1a597e02b7e4@178.214.124.1:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=images.mycdn-io.ru&fp=edge&pbk=kjUd2XnkDKju6yOKi5zDna2_iFt_TzXUlQRsIHp1AEk&sid=fbe42a5d4788bacc&spx=/#🇵🇱 Польша 10 Гбит/с 🔥
-
-vless://62546819-be8b-4ecf-bb90-ed04fdf610f3@178.214.125.2:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=conf.emaar.ru&fp=qq&pbk=ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY&sid=6172ba9cffe9c22f&spx=/#🇫🇮 Финляндия 10 Гбит/с 🔥
+vless://4b0608f5-c611-4cdb-8fa5-e0d0742ecfbc@178.214.124.1:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=images.mycdn-io.ru&fp=edge&pbk=kjUd2XnkDKju6yOKi5zDna2_iFt_TzXUlQRsIHp1AEk&sid=fbe42a5d4788bacc&spx=/#🇵🇱%20Польша%2010%20Гбит/с%20🔥
+vless://62546819-be8b-4ecf-bb90-ed04fdf610f3@178.214.125.2:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=conf.emaar.ru&fp=qq&pbk=ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY&sid=6172ba9cffe9c22f&spx=/#🇫🇮%20Финляндия%2010%20Гбит/с%20🔥
+vless://d249169f-124a-4a34-8fa2-748cd72e6b91@178.214.109.2:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=promo-digital.wb.ru&fp=qq&pbk=3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc&sid=1cfa55abe4d2dc7a&spx=/#🇩🇪%20Германия%2010%20Гбит/с%20🔥
+vless://cf56362c-c1d4-420d-9bac-06fc7c0f467a@104.194.144.40:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=inpost.co.uk&fp=edge&pbk=MFEIB2WW-LFHZhI_2lxznilxfnc8n2B7Dkn2hpAcSHY&sid=dcfed5639f3b1830&spx=/#🇬🇧%20Великобритания
