@@ -1,237 +1,237 @@
 {
-  "inbounds": [
-    {
-      "listen": "127.0.0.1",
-      "port": 10808,
-      "protocol": "socks",
-      "settings": {
-        "auth": "noauth",
-        "udp": true
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ],
-        "enabled": true,
-        "routeOnly": true
-      },
-      "tag": "socks"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10809,
-      "protocol": "http",
-      "settings": {
-        "allowTransparent": false
-      },
-      "sniffing": {
-        "destOverride": [
-          "http",
-          "tls",
-          "quic"
-        ],
-        "enabled": true,
-        "routeOnly": true
-      },
-      "tag": "http"
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 10811,
-      "protocol": "dokodemo-door",
-      "settings": {
-        "address": "127.0.0.1",
-        "network": "tcp,udp",
-        "port": 0
-      },
-      "tag": "entry-tier1"
-    }
-  ],
-  "dns": {
-    "queryStrategy": "UseIPv4",
-    "servers": [
-      "1.1.1.1",
-      "8.8.8.8",
-      "8.8.4.4"
-    ]
-  },
-  "log": {
-    "dnsLog": true,
-    "loglevel": "Warning"
-  },
-  "observatory": {
-    "enableConcurrency": true,
-    "probeInterval": "30s",
-    "probeUrl": "https://www.cloudflare.com/cdn-cgi/trace",
-    "subjectSelector": [
-      "proxy-t0-",
-      "proxy-t1-"
-    ]
-  },
-  "outbounds": [
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.214.124.1",
-            "port": 443,
-            "users": [
-              {
-                "id": "4b0608f5-c611-4cdb-8fa5-e0d0742ecfbc",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
+    "dns": {
+        "queryStrategy": "UseIPv4",
+        "servers": [
+            "1.1.1.1",
+            "8.8.8.8",
+            "8.8.4.4"
         ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "edge",
-          "publicKey": "kjUd2XnkDKju6yOKi5zDna2_iFt_TzXUlQRsIHp1AEk",
-          "serverName": "images.mycdn-io.ru",
-          "shortId": "fbe42a5d4788bacc",
-          "show": false,
-          "spiderX": "/"
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": true
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": true
+            },
+            "tag": "http"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 10811,
+            "protocol": "dokodemo-door",
+            "settings": {
+                "address": "127.0.0.1",
+                "network": "tcp,udp",
+                "port": 0
+            },
+            "tag": "entry-tier1"
         }
-      },
-      "tag": "proxy-t0-nl-78"
-    },
-    {
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.182.110.23",
-            "port": 443,
-            "users": [
-              {
-                "id": "6c67594e-5ce8-4f33-bc1d-266887b73fe9",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "qq",
-          "publicKey": "bKPAH7hqu5DXYVSZPvU0iwc2jV4mfXL5qLqCsAx0mUM",
-          "serverName": "promo-digital.wb.ru",
-          "shortId": "3866aaac3904acf8",
-          "show": false,
-          "spiderX": "/"
-        }
-      },
-      "tag": "proxy-t1-ru-150"
-    },
-    {
-      "protocol": "freedom",
-      "tag": "direct"
-    },
-    {
-      "protocol": "blackhole",
-      "tag": "block"
-    },
-    {
-      "protocol": "loopback",
-      "tag": "loop_to_tier1",
-      "settings": {
-        "inboundTag": "entry-tier1"
-      }
-    }
-  ],
-  "routing": {
-    "domainMatcher": "hybrid",
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "type": "field",
-        "inboundTag": [
-          "entry-tier1"
-        ],
-        "balancerTag": "lb_tier1"
-      },
-      {
-        "type": "field",
-        "outboundTag": "direct",
-        "protocol": [
-          "bittorrent"
-        ]
-      },
-      {
-        "type": "field",
-        "domain": [
-          "domain:ru",
-          "domain:xn--p1ai",
-          "domain:2gis.com",
-          "full:go.yandex",
-          "domain:kaspersky.com",
-          "domain:kontur.host",
-          "domain:lenta.com",
-          "domain:megamarket.tech",
-          "domain:moex.com",
-          "domain:mycdn.me",
-          "domain:qiwi.com",
-          "domain:reviews.2gis.com",
-          "domain:sberbank.com",
-          "domain:tank-online.com",
-          "domain:tbank-online.com",
-          "domain:tildaapi.com",
-          "domain:trvl.yandex.net",
-          "domain:userapi.com",
-          "domain:vk.com",
-          "domain:vk.me",
-          "domain:yandex.com",
-          "domain:yandex.net",
-          "domain:yandexcloud.net",
-          "domain:yastatic.net"
-        ],
-        "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
-        "balancerTag": "lb_tier0",
-        "network": "tcp,udp"
-      }
     ],
-    "balancers": [
-      {
-        "tag": "lb_tier0",
-        "selector": [
-          "proxy-t0-"
-        ],
-        "fallbackTag": "loop_to_tier1",
-        "strategy": {
-          "type": "leastPing"
+    "log": {
+        "dnsLog": true,
+        "loglevel": "Warning"
+    },
+    "meta": {
+        "serverDescription": "🇵🇱 Польша 10 Гбит/с 🔥"
+    },
+    "observatory": {
+        "enableConcurrency": true,
+        "probeInterval": "30s",
+        "probeUrl": "https://www.cloudflare.com/cdn-cgi/trace",
+        "subjectSelector": [
+            "proxy-t0-",
+            "proxy-t1-"
+        ]
+    },
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "178.214.124.1",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "135c9186-dcd9-4fe6-9ee0-e865165266f5"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "realitySettings": {
+                    "fingerprint": "edge",
+                    "publicKey": "kjUd2XnkDKju6yOKi5zDna2_iFt_TzXUlQRsIHp1AEk",
+                    "serverName": "images.mycdn-io.ru",
+                    "shortId": "fbe42a5d4788bacc",
+                    "show": false,
+                    "spiderX": "/"
+                },
+                "security": "reality"
+            },
+            "tag": "proxy-t0-nl-78"
+        },
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "95.182.110.4",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "6c67594e-5ce8-4f33-bc1d-266887b73fe9"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "realitySettings": {
+                    "fingerprint": "qq",
+                    "publicKey": "bKPAH7hqu5DXYVSZPvU0iwc2jV4mfXL5qLqCsAx0mUM",
+                    "serverName": "promo-digital.wb.ru",
+                    "shortId": "3866aaac3904acf8",
+                    "show": false,
+                    "spiderX": "/"
+                },
+                "security": "reality"
+            },
+            "tag": "proxy-t1-ru-150"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        },
+        {
+            "protocol": "loopback",
+            "settings": {
+                "inboundTag": "entry-tier1"
+            },
+            "tag": "loop_to_tier1"
         }
-      },
-      {
-        "tag": "lb_tier1",
-        "selector": [
-          "proxy-t1-"
+    ],
+    "remarks": "🇵🇱 Польша 10 Гбит/с 🔥",
+    "routing": {
+        "balancers": [
+            {
+                "fallbackTag": "loop_to_tier1",
+                "selector": [
+                    "proxy-t0-"
+                ],
+                "strategy": {
+                    "type": "leastPing"
+                },
+                "tag": "lb_tier0"
+            },
+            {
+                "fallbackTag": "proxy-t0-nl-78",
+                "selector": [
+                    "proxy-t1-"
+                ],
+                "strategy": {
+                    "type": "leastPing"
+                },
+                "tag": "lb_tier1"
+            }
         ],
-        "fallbackTag": "proxy-t0-nl-78",
-        "strategy": {
-          "type": "leastPing"
-        }
-      }
-    ]
-  },
-  "remarks": "🇵🇱 Польша 10 Гбит/с 🔥",
-  "meta": {
-    "serverDescription": "🇵🇱 Польша 10 Гбит/с 🔥"
-  }
+        "domainMatcher": "hybrid",
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "balancerTag": "lb_tier1",
+                "inboundTag": [
+                    "entry-tier1"
+                ],
+                "type": "field"
+            },
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            },
+            {
+                "domain": [
+                    "domain:ru",
+                    "domain:xn--p1ai",
+                    "domain:2gis.com",
+                    "full:go.yandex",
+                    "domain:kaspersky.com",
+                    "domain:kontur.host",
+                    "domain:lenta.com",
+                    "domain:megamarket.tech",
+                    "domain:moex.com",
+                    "domain:mycdn.me",
+                    "domain:qiwi.com",
+                    "domain:reviews.2gis.com",
+                    "domain:sberbank.com",
+                    "domain:tank-online.com",
+                    "domain:tbank-online.com",
+                    "domain:tildaapi.com",
+                    "domain:trvl.yandex.net",
+                    "domain:userapi.com",
+                    "domain:vk.com",
+                    "domain:vk.me",
+                    "domain:yandex.com",
+                    "domain:yandex.net",
+                    "domain:yandexcloud.net",
+                    "domain:yastatic.net"
+                ],
+                "outboundTag": "direct",
+                "type": "field"
+            },
+            {
+                "balancerTag": "lb_tier0",
+                "inboundTag": [
+                    "socks",
+                    "http"
+                ],
+                "network": "tcp,udp",
+                "type": "field"
+            }
+        ]
+    }
 }
