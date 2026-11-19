@@ -85,7 +85,7 @@
                             {
                                 "encryption": "none",
                                 "flow": "xtls-rprx-vision",
-                                "id": "135c9186-dcd9-4fe6-9ee0-e865165266f5"
+                                "id": "98463748-e5ef-464d-8cbd-09716590e10f"
                             }
                         ]
                     }
@@ -111,12 +111,12 @@
                 "vnext": [
                     {
                         "address": "95.182.110.4",
-                        "port": 443,
+                        "port": 8443,
                         "users": [
                             {
                                 "encryption": "none",
                                 "flow": "xtls-rprx-vision",
-                                "id": "6c67594e-5ce8-4f33-bc1d-266887b73fe9"
+                                "id": "f8c17d8b-8bb7-4c3a-be89-d03de079096f"
                             }
                         ]
                     }
